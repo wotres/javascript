@@ -1,0 +1,12 @@
+sass 적용
+yarn add node-sass sass-loader
+###############################################################
+라우터와 리덕스를 적용
+yarn add react-router-dom redux redux-actions react-redux redux-pender immutable
+
+###############################################################
+컴포넌트 호출시 경로를 절대 경로로 입력할수 있도록 src 폴더를 기준으로 하도록 NODE_PATH 설정하는법
+.env 파일 아래 
+NODE_PATH=src
+###############################################################
+
