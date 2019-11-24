@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>샵</title>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <h1 v-text="sitename"></h1>
+            </header>
+        </div>
+
+        <script type="text/javascript">
+            var webstore =new Vue({
+                el: '#app',
+                data:{
+                    sitename: 'Vue.js 샵'
+                }
+            })
+        </script>
+    </body>
+</html>

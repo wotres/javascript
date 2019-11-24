@@ -3,10 +3,16 @@ yarn add node-sass sass-loader
 ###############################################################
 라우터와 리덕스를 적용
 yarn add react-router-dom redux redux-actions react-redux redux-pender immutable
-
+스타일 관련 : 생삭 쉽게 선택할 수 있는 opne-color, 반응형 디자인을 쉽게 적용할 수 있는 include-media, 그림자를 간편하게 설정할 수 있는 material-shadow
+yarn add open-color include-media
+https://yeun.github.io/open-color/ 에서 색상 확인
 ###############################################################
 컴포넌트 호출시 경로를 절대 경로로 입력할수 있도록 src 폴더를 기준으로 하도록 NODE_PATH 설정하는법
 .env 파일 아래 
 NODE_PATH=src
 ###############################################################
+Module not found: Can't resolve 'components/common/Button' in '...' 에러는
+경로지정을 잘못하였거나 해당 경로에 export default 를 안해준 경우\
+또는 해당경로에 index.js 를 생성하지 않은 경우에 발생한다.
+index.js 문제인 경우는 해당경로에 생성한뒤 
 

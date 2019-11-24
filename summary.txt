@@ -1,0 +1,31 @@
+JAVASCRIPT 문법
+
+소수 n자리 까지 출력
+.toFixed(n) 
+
+###############################################################
+세자리마다 쉼표 삽입
+function comma(price){
+    var priceString = String(price);
+    var priceArray = priceString.split("").reverse();
+    var index = 0;
+    while (priceArray.length > index + 3) {
+        priceArray.splice(index+3, 0, ",");
+        index += 4;
+    }
+    return "$" + priceArray.reverse().join("");
+}
+
+###############################################################
+배열 특정 위치에 입력
+1번 인덱스에 "Feb" 입력
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+console.log(months);
+
+###############################################################
+문자열 합치기
+["a", "b"].join(" ")
+###############################################################
+엄격하지 않은(non-strict) 항등연산자 == 을 사용할때 
+1 == "1" 은 true 임. === 사용할것.

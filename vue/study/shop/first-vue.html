@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Vue로 만든 샵</title>
+        <meta charset="UTF-8">
+        <!-- Vue CDN : Content delivery network : 지리적, 물리적으로 떨어져 있는 사용자에게 컨텐츠 제공자의 컨텐츠를 더 빠르게 제공할수 있는 기술-->
+        <script src="http://unpkg.com/vue"></script>
+        <link src="stylesheet" type="text/css" href="assets/css/app.css"/>
+        <!-- crossorigin : 보안때문에 추가 
+            동일 출처정책(Same-origin-policy)와 반대되는 개념으로 프로토컬, 도메인, 포트가 달라도 리소스 공유 가능 ex) api 호출 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- id 를 통해 애플리케이션을 마운트함-->
+        <div id="app"></div>
+        <script type="text/javascript">
+            var webstore = new Vue({
+                el: '#app'
+            });    
+        </script>
+    </body>
+</html>
